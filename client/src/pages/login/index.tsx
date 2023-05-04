@@ -1,5 +1,10 @@
+import { Layout } from "../../components/layout";
 import React from "react";
 
 export const Login = () => {
-  return <div>Login</div>;
+  return (
+    <Layout>
+      <div>Login</div>
+    </Layout>
+  );
 };
