@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Paths } from "./paths";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
+import { Auth } from "./features/auth/auth";
 import "./index.css";
 
 const container = document.getElementById("root")!;
@@ -31,7 +32,9 @@ const router = createBrowserRouter([
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <Auth>
+        <RouterProvider router={router} />
+      </Auth>
     </Provider>
   </React.StrictMode>
 );
