@@ -1,7 +1,7 @@
 // all the route paths
 export const Paths = {
   home: "/",
-  employeeAdd: "/employee/edit",
+  employeeAdd: "/employee/add",
   employeeEdit: "/employee/edit",
   employee: "/employee",
   status: "/status",
