@@ -3,12 +3,12 @@ import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { store } from "./app/store";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Paths } from "./paths";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { Auth } from "./features/auth/auth";
+import { Employees } from "./pages/employees";
 import "./index.css";
 
 const container = document.getElementById("root")!;
@@ -17,7 +17,7 @@ const root = createRoot(container);
 const router = createBrowserRouter([
   {
     path: Paths.home,
-    element: <h1>Home</h1>,
+    element: <Employees />,
   },
   {
     path: Paths.login,
