@@ -10,8 +10,9 @@ import { Register } from "./pages/register";
 import { Auth } from "./features/auth/auth";
 import { Employees } from "./pages/employees";
 import { AddEmployee } from "./pages/add-employee";
-import "./index.css";
 import { Status } from "./pages/status";
+import { Employee } from "./pages/employee";
+import "./index.css";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: `${Paths.status}/:status`,
     element: <Status />,
+  },
+  {
+    path: `${Paths.employee}/:id`,
+    element: <Employee />,
   },
 ]);
 
